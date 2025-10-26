@@ -7,8 +7,9 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
+
 app.get("/",(req,res)=>{
-    res.send("Hello world")
+    res.send("Hello muxtor")
 })
 
 app.post("/users",async(req,res)=>{
